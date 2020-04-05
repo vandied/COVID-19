@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "precommit": "lint-staged",
+    "fix": "prettier --single-quote --tab-width 2  --trailing-comma es5 --write \"src/**/*.{ts,js,json,scss,css,jsx,tsx,html}\""
+  },
+  "lint-staged": {
+    "src/**/*.js": ["prettier --single-quote --trailing-comma es6 --write",
+      "git add"]
+  },
+  "dependencies": {
+    "prettier": "^2.0.2"
+  }
+}
