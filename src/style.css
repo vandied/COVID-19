@@ -1,15 +1,19 @@
-* {
+.root {
   width: 100%;
   max-width: 1920px;
-
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 190%;
   color: #4b4f51;
+}
 
+.body {
+  margin: 0;
   background-color: #fff8f8;
+  overflow-x: hidden;
 }
 
 .button {
@@ -24,6 +28,8 @@
 }
 
 .header {
+  display: flex;
+  justify-content: space-between;
   padding: 30px 240px;
 }
 
@@ -48,12 +54,121 @@
 }
 
 .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar {
+.navBar {
+}
+.navBar__btn {
+  padding: 16px 45px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ff383d;
+  border: 2px solid #fb4c47;
+  box-sizing: border-box;
+  border-radius: 46px;
+  background-color: #fff8f8;
+  cursor: pointer;
+}
+.navBar__btn:hover {
+  color: #fff8f8;
+  background-color: #fb4c47;
+}
+
+.menu {
+  display: flex;
+}
+
+.menu__item {
+  padding: 0 10px;
+  list-style: none;
+}
+
+.menu__link {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.menu__link:hover {
+  color: #fb4c47;
+  text-decoration: underline;
 }
 
 .main {
+  padding: 30px 240px;
+}
+
+.sectionWithImage {
+  display: flex;
+}
+
+.textBlock {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 120px 0;
+}
+
+.textBlock_supTitle {
+  margin: 0;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fa5652;
+}
+
+.textBlock_title {
+  margin: 0 0 20px 0;
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #035755;
+}
+
+.textBlock_text {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #4b4f51;
+  margin: 0;
+}
+
+.textBlock_btn {
+  padding: 25px 60px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: capitalize;
+  color: #fff8f8;
+  background: #fb4c47;
+  box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+  border-radius: 65px;
+  cursor: pointer;
+}
+
+.textBlock_btn:hover {
+  background-color: #fb4c47;
+  opacity: 0.7;
+}
+
+.imageBlock {
+  position: relative;
+  width: 50%;
+}
+.imageBlock_img {
+  position: absolute;
+  width: 1000px;
+  top: -70px;
+  left: -90px;
 }
 
 .footer {

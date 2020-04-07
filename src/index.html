@@ -10,30 +10,55 @@
     <link rel="stylesheet" href="style.css" />
     <title>COVID-19</title>
   </head>
-  <body>
-    <header class="header">
-      <div class="logo">
-        <img class="logo__img" src="../images/logo.svg" alt="logo" />
-        <span class="logo__text">Covid - 19</span>
-      </div>
-      <div class="navigation">
-        <nav class="navbar">
-          <ul class="menu">
-            <li class="menu__item">Overview</li>
-            <li class="menu__item">Contagion</li>
-            <li class="menu__item">Symptoms</li>
-            <li class="menu__item">Prevention</li>
-          </ul>
-        </nav>
-        <button class="button">Contact</button>
-      </div>
-    </header>
-    <main class="main">main</main>
-    <footer class="footer">
-      <div class="logo">
-        <img class="logo__img" src="../images/logo.svg" alt="logo" />
-        <span class="logo__text">Covid - 19</span>
-      </div>
-    </footer>
+  <body class="body">
+    <div class="root">
+      <header class="header">
+        <div class="logo">
+          <img class="logo__img" src="../images/logo.svg" alt="logo" />
+          <span class="logo__text">Covid - 19</span>
+        </div>
+        <div class="navigation">
+          <nav class="navBar">
+            <ul class="menu">
+              <li class="menu__item">
+                <a class="menu__link">Overview</a>
+              </li>
+              <li class="menu__item"><a class="menu__link">Contagion</a></li>
+              <li class="menu__item"><a class="menu__link">Symptoms</a></li>
+              <li class="menu__item"><a class="menu__link">Prevention</a></li>
+            </ul>
+          </nav>
+          <button class="navBar__btn">Contact</button>
+        </div>
+      </header>
+      <main class="main">
+        <section class="sectionWithImage">
+          <div class="textBlock">
+            <p class="textBlock_supTitle">COVID-19 Alert</p>
+            <p class="textBlock_title">
+              Stay at Home quarantine To stop Corona virus
+            </p>
+            <p class="textBlock_text">
+              There is no specific medicine to prevent or treat coronavirus
+              disease (COVID-19). People may need supportive care to .
+            </p>
+            <button class="textBlock_btn">Let Us Help</button>
+          </div>
+          <div class="imageBlock">
+            <img
+              class="imageBlock_img"
+              src="../images/stayAtHome.svg"
+              alt="girlWithTea"
+            />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="logo">
+          <img class="logo__img" src="../images/logo.svg" alt="logo" />
+          <span class="logo__text">Covid - 19</span>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
