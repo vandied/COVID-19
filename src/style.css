@@ -237,8 +237,46 @@
   line-height: 33px;
   text-align: center;
   text-transform: capitalize;
-
   color: #4b4f51;
 }
+
+.cardsToDo {
+}
+.cardToDo {
+  display: flex;
+  align-items: center;
+}
+.cardToDo__img {
+  width: 80%;
+}
+.cardToDoItem {
+  width: 50%;
+  position: relative;
+}
+.cardToDoItem_img {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+}
+.descriptionHowToDo {
+  margin-left: 100px;
+}
+.descriptionHowToDo__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 69px;
+  text-transform: capitalize;
+  color: #035755;
+}
+.descriptionHowToDo__text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #4b4f51;
+}
+
 .footer {
 }
